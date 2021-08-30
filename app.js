@@ -1,16 +1,18 @@
 function createInstructor(firstName, lastName) {
   return {
     firstName,
-    lastName,
+    lastName
   };
 }
 
+//
 let favoriteNumber = 42;
 const instructor = {
   firstName: 'Colt',
-  [favoriteNumber]: 'That is my favorite!',
+  [favoriteNumber]: 'That is my favorite!'
 };
 
+//
 const instructor = {
   firstName: 'Colt',
   sayHi() {
@@ -18,5 +20,15 @@ const instructor = {
   },
   sayBye() {
     return this.firstName + ' says bye!';
-  },
+  }
 };
+
+//
+function animal(species, verb, noise) {
+  return {
+    species,
+    [verb]() {
+      return noise;
+    }
+  };
+}
